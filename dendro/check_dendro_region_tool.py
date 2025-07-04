@@ -31,46 +31,9 @@ def indexing_regions(regfile):
             b3only_regs.append(i)
     return b3b6_regs, b3only_regs
 
-def compare_with_initial_dendro(init_dendro, regs, wcs, beam):
-    pixcoords = PixCoord(init_dendro['peak_x'], init_dendro['peak_y'])
-
-    selected_regs = []
-    unselected_regs = []
-    selected_peaks_x = []
-    selected_peaks_y = []
-    pixel_scale = wcs.proj_plane_pixel_scales()[0]
-
-    for reg in regs:
-        reg_pix = reg.to_pixel(wcs)
-        reg_pix_circle = CirclePixelRegion(reg_pix.center, radius=(beam.major/pixel_scale).to(u.pix/u.pix).value)
-        if any(reg_pix_circle.contains(pixcoords)):
-            selected_regs.append(reg_pix_circle)
-
-            iscontain = reg_pix_circle.contains(pixcoords)
-            selected_peak_x = init_dendro['peak_x'][iscontain]
-            selected_peak_y = init_dendro['peak_y'][iscontain]
-            selected_peak_value = init_dendro['peak_value'][iscontain]
-            if len(selected_peak_x) > 1:
-                maxind = np.argmax(selected_peak_value)
-                selected_peaks_x.append(selected_peak_x[maxind].item())
-                selected_peaks_y.append(selected_peak_y[maxind].item())
-            elif len(selected_peak_x) == 1:
-                selected_peaks_x.append(selected_peak_x.item())
-                selected_peaks_y.append(selected_peak_y.item())
 
 
-        else:
-#            print('not matched with dendro')
-            unselected_regs.append(reg_pix_circle)
-    print(f'Number of selected regions: {len(selected_regs)}')
-    print(f'Number of unselected regions: {len(unselected_regs)}')
-    print(f'Number of total regions: {len(regs)}')
-    print(f'Number of selected initial dendrogram peaks: {len(selected_peaks_x)}')
-    print(f'Number of initial dendrogram peaks: {len(init_dendro)}')
-    print(selected_peaks_x)
-    return selected_regs, unselected_regs, selected_peaks_x, selected_peaks_y
-
-def compare_with_initial_dendro(init_dendro, regs, wcs, beam=None, ispointregion=False):
+def compare_with_initial_dendro(init_dendro, regs, wcs, beam=None, ispointregion=False, label='adam'):
     pixcoords = PixCoord(init_dendro['peak_x'], init_dendro['peak_y'])
 
     selected_regs = []
@@ -81,6 +44,9 @@ def compare_with_initial_dendro(init_dendro, regs, wcs, beam=None, ispointregion
     selected_idarr = []
 
     pixel_scale = wcs.proj_plane_pixel_scales()[0]
+    copied_dendro = init_dendro.copy()
+    if not f'{label}_selected' in init_dendro.colnames:
+        copied_dendro.add_column(np.zeros(len(init_dendro)), name=f'{label}_selected')
 
     for reg in regs:
         reg_pix = reg.to_pixel(wcs)
@@ -101,10 +67,15 @@ def compare_with_initial_dendro(init_dendro, regs, wcs, beam=None, ispointregion
                 selected_peaks_x.append(selected_peak_x[maxind].item())
                 selected_peaks_y.append(selected_peak_y[maxind].item())
                 selected_idarr.append(selected_id[maxind].item())
+                
+                #copied_dendro[f'{label}_selected'][iscontain][maxind] = 1
+
             elif len(selected_peak_x) == 1:
                 selected_peaks_x.append(selected_peak_x.item())
                 selected_peaks_y.append(selected_peak_y.item())
                 selected_idarr.append(selected_id.item())
+                #copied_dendro[f'{label}_selected'][iscontain] = 1
+
 
 
         else:
@@ -162,7 +133,7 @@ def plot_main(region, band, fitsfile, init_dendrofile, regs, label='adam', ispoi
         beam = Beam.from_fits_header(hdr)
     else:
         beam = None
-    selected_regs, unselected_regs, selected_peaks_x, selected_peaks_y, selected_dendro = compare_with_initial_dendro(init_dendro, regs, wcs, beam=beam, ispointregion=ispointregion)
+    selected_regs, unselected_regs, selected_peaks_x, selected_peaks_y, copied_dendro = compare_with_initial_dendro(init_dendro, regs, wcs, beam=beam, ispointregion=ispointregion, label=label)
     print(selected_peaks_x, selected_peaks_y)
     fig = plt.figure(figsize=(30, 30))
     ax = fig.add_subplot(111, projection=WCS(hdr, naxis=2))
@@ -172,7 +143,7 @@ def plot_main(region, band, fitsfile, init_dendrofile, regs, label='adam', ispoi
     plot_selected_regions(ax, wcs, selected_regs, unselected_regs, selected_peaks_x, selected_peaks_y, init_dendro['peak_x'], init_dendro['peak_y'], ispointregion=ispointregion, beam=beam)
     plt.savefig(f'{region}_{band}_{label}_selected_regions.png', bbox_inches='tight', dpi=300)
 
-    return selected_dendro
+    return copied_dendro
 
 def save_dendro(selected_dendro, region, band, label='adam'):
     
