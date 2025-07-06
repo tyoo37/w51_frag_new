@@ -36,15 +36,15 @@ labels = ['adam', 'nazar', 'taehwa']
 for region in ['W51-E', 'W51-IRS2']:
     for band in ['B3', 'B6']:
 
-        init_dendro = Table.read(f'{region}_{band}_initial_dendro.fits')
+        init_dendro = Table.read(f'tables/{region}_{band}_initial_dendro.fits')
 
-        tab1 = Table.read(f'{region}_{band}_{labels[0]}_selected.fits')
-        tab2 = Table.read(f'{region}_{band}_{labels[1]}_selected.fits')
-        tab3 = Table.read(f'{region}_{band}_{labels[2]}_selected.fits')
+        tab1 = Table.read(f'tables/{region}_{band}_{labels[0]}_selected.fits')
+        tab2 = Table.read(f'tables/{region}_{band}_{labels[1]}_selected.fits')
+        tab3 = Table.read(f'tables/{region}_{band}_{labels[2]}_selected.fits')
 
         count_added_dendro = add_count_column(init_dendro, tab1, tab2, tab3)
 
         select_ind = np.where(count_added_dendro['id_count']>=2)
         
         truncated_dendro = count_added_dendro[select_ind]
-        truncated_dendro.write(f'{region}_{band}_truncated_dendro.fits', overwrite=True)
+        truncated_dendro.write(f'tables/{region}_{band}_truncated_dendro.fits', overwrite=True)

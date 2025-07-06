@@ -103,7 +103,7 @@ def main():
             fitsfile = Path.w51n_b3_tt0
             pbfile = None
             noiseregion = Path.w51n_b3_noise_region
-            regfile_to_remove = Path.w51n_b3_remove_reg
+            #regfile_to_remove = Path.w51n_b3_remove_reg
             regfile_to_remove = None
             vmin =  -0.00010907209521789237
             vmax = 0.0009166079520288469
@@ -132,8 +132,8 @@ def main():
     noiseim_b6 = np.concatenate(container)
     b6_std = stats.mad_std(noiseim_b6,ignore_nan=True)
 
-    min_value_factor = 5
-    min_delta_factor = 3
+    min_value_factor = 3
+    min_delta_factor = 1.5
     min_npix = 15
 
     source_object_b6 = RadioSource(fitsdata_b6,)
@@ -158,13 +158,13 @@ def main():
     else:
         pbdata = None
     table_b6 = remove_dendro(source_object_b6, custom_dendro_b6, pbdata, remove_regs, thres=0.21)
-    table_b6.write(f'{region}_{band}_initial_dendro.fits', format='fits', overwrite=True)
+    table_b6.write(f'tables/{region}_{band}_initial_dendro.fits', format='fits', overwrite=True)
 
     fig = plt.figure(figsize=(30, 30))
     ax = fig.add_subplot(projection=wcs)
     ax.imshow(image_b6, origin='lower', cmap='inferno', vmin=vmin, vmax=vmax)
     ax.scatter(table_b6['peak_x'], table_b6['peak_y'], s=100, color='red', marker='x',)
-    plt.savefig(f'{region}_{band}_initial_dendro.png', dpi=300, bbox_inches='tight')
+    plt.savefig(f'pngs/{region}_{band}_initial_dendro.png', dpi=300, bbox_inches='tight')
     plt.close(fig)
 
 

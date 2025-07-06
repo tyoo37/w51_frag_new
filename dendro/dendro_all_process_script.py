@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
     for region in ['W51-E', 'W51-IRS2']:
         for band in ['B3', 'B6']:
-            file_path = f'{region}_{band}_init_dendro.fits'
+            file_path = f'fits/{region}_{band}_init_dendro.fits'
             assert os.path.exists(file_path), f"Error: File '{file_path}' does not exist."
  
 
@@ -48,7 +48,7 @@ if __name__ == "__main__":
 
     for region in ['W51-E', 'W51-IRS2']:
         for band in ['B3', 'B6']:
-            file_path = f'{region}_{band}_adam_selected_regions.png'
+            file_path = f'pngs/{region}_{band}_adam_selected_regions.png'
             assert os.path.exists(file_path), f"Error: File '{file_path}' does not exist."
 
     print("Running check_nazar_regions.ipynb")
