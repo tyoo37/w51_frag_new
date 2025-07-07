@@ -21,8 +21,8 @@ def plot_dendro(fitsfile, table_truncated, table_main,vmin=0,vmax=1):
     fig = plt.figure(figsize=(30, 30))
     ax = fig.add_subplot(projection=wcs)
     ax.imshow(image_b6, origin='lower', cmap='inferno', vmin=vmin, vmax=vmax)
-    ax.scatter(table_main['peak_x'], table_main['peak_y'], s=100, color='yellow', marker='o', label='Main Sources')
-    ax.scatter(table_truncated['peak_x'], table_truncated['peak_y'], s=100, color='cyan', marker='x',)
+    ax.scatter(table_main['peak_x'], table_main['peak_y'], s=5, color='orange', marker='o', label='Main Sources')
+    ax.scatter(table_truncated['peak_x'], table_truncated['peak_y'], s=5, color='cyan', marker='x',)
     plt.savefig(f'pngs/{region}_{band}_final_dendro.png', dpi=300, bbox_inches='tight')
     plt.close(fig)
 
