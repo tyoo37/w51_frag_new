@@ -41,7 +41,7 @@ if __name__ == "__main__":
             assert os.path.exists(file_path), f"Error: File '{file_path}' does not exist."
  
 
-    #run notebook
+    #compare initial dendrogram with visually selected sources
     print("Running notebooks to match initial dendrogram and visually selected sources...")
     print("Running check_adam_regions.ipynb")
     run_notebook('check_adam_regions.ipynb', kernel_name='base')
@@ -66,7 +66,13 @@ if __name__ == "__main__":
             file_path = f'{region}_{band}_taehwa_selected_regions.png'
             assert os.path.exists(file_path), f"Error: File '{file_path}' does not exist."
 
-    
+    #merge the matching sources from the three coauthors into one catalog
     exec(open("merge_catalog.py").read())
 
+    #check whether the final dendrogram is correct
     run_notebook('check_final_dendro.ipynb', kernel_name='base')
+
+    #match the dendrogram with the band 3 and band 6 catalogs
+    run_notebook('matching_band3band6.ipynb', kernel_name='base')
+
+    exec(open("cat_to_reg.py").read())
