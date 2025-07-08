@@ -67,12 +67,22 @@ if __name__ == "__main__":
             assert os.path.exists(file_path), f"Error: File '{file_path}' does not exist."
 
     #merge the matching sources from the three coauthors into one catalog
+    print("Running merge_catalog.py to merge catalogs...")
     exec(open("merge_catalog.py").read())
 
     #check whether the final dendrogram is correct
+    print("Running check_final_dendro.ipynb to verify final dendrogram...")
     run_notebook('check_final_dendro.ipynb', kernel_name='base')
 
     #match the dendrogram with the band 3 and band 6 catalogs
+    print("Running matching_band3band6.ipynb to match dendrogram with catalogs...")
     run_notebook('matching_band3band6.ipynb', kernel_name='base')
 
+    #create reg files from the catalogs to check catalogs in carta
+    print("Running cat_to_reg.py to create reg files from catalogs...")
     exec(open("cat_to_reg.py").read())
+
+    #manually adjust the matched catalog
+    print("Running manual_adjustment.ipynb to manually adjust the matched catalog...")
+    run_notebook('manual_adjustment.ipynb', kernel_name='base')
+

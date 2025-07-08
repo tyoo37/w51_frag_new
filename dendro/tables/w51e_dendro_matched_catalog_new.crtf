@@ -1,140 +1,140 @@
 #CRTFv0
-circle [[290.93232480562904deg, 14.50541222136782deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.932371860991deg, 14.505463332600574deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.932455642757deg, 14.505459999460392deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9324648242179deg, 14.505505555035423deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9322524991548deg, 14.505941110052976deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9325841838294deg, 14.505934444144511deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93261287623363deg, 14.505959999743824deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9312758073839deg, 14.506065549560057deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93236152972986deg, 14.506206665909666deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.932482038112deg, 14.506221110627845deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93242924391205deg, 14.506235554959966deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93257729667545deg, 14.506496666356718deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93260828458847deg, 14.506499999737997deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93262664706225deg, 14.506992221987339deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9307880264093deg, 14.506997767805686deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9334059376306deg, 14.507024444018393deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9337181129891deg, 14.507033332109476deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93342544862844deg, 14.507043332869523deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9332532933906deg, 14.507259999814085deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93272305374404deg, 14.50735999988116deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9327494509447deg, 14.507378888794873deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93280913159deg, 14.507419999951251deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93346791481406deg, 14.507545555004366deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93315114793177deg, 14.507551111030871deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93274371223754deg, 14.507565555456512deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93288947092117deg, 14.507584444432874deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9349691148034deg, 14.507588880329124deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9329147204491deg, 14.507639999994485deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9329445608162deg, 14.507713333331495deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.932954890178deg, 14.507783333331894deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9329330837313deg, 14.507845555552828deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9328378239677deg, 14.50789555552345deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9320355716581deg, 14.508967775974341deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.933455293244deg, 14.50896999947614deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93330150000054deg, 14.509205555305178deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93388798249646deg, 14.509271109280688deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9331924675019deg, 14.509583333216197deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9331637746304deg, 14.509632222131787deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93242464482876deg, 14.50967333272936deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9330719573353deg, 14.509747777749356deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93330379635927deg, 14.509801110857401deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.931436458849deg, 14.509894439540947deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93153171929515deg, 14.509921106802128deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9328217547551deg, 14.510005555514972deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93118740318033deg, 14.509994437805098deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93278273231635deg, 14.510002222155856deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93278847089607deg, 14.51002111104895deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93307540064654deg, 14.510047777747673deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93259909718176deg, 14.510075555281304deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93283552733214deg, 14.510094444411425deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.932651892197deg, 14.51012555535571deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93305359401074deg, 14.5101099999797deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9329204585522deg, 14.510153333329205deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9330593326255deg, 14.510148888866212deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9330053898101deg, 14.51017777777201deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9329181630825deg, 14.510321111106615deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9330340828781deg, 14.510394444431228deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9324946540502deg, 14.510401110654948deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.931808315061deg, 14.510763330532956deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93272075418093deg, 14.51122999987963deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.929582869161deg, 14.511511086993849deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93171534174087deg, 14.51214777450724deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.931538589116deg, 14.512492217955888deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93246710288474deg, 14.51304333282353deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.92995470029115deg, 14.513892203129354deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93013259876085deg, 14.51397664976906deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93092912952557deg, 14.51402221350996deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9300820972429deg, 14.514052204715362deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.92995928871784deg, 14.51407886985488deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9323316912753deg, 14.50563277695228deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93331182623484deg, 14.507139721965851deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93277756990904deg, 14.507273888827976deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9326771456659deg, 14.50733805539649deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9285657727739deg, 14.507666625834712deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9329523079356deg, 14.507814444452949deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93231360702663deg, 14.5083919435734deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.92857780846106deg, 14.508436626058646deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93352272116846deg, 14.508835277112416deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93365930048736deg, 14.509307776746626deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.934824232447deg, 14.509424437084deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93283782297726deg, 14.509898888867031deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9328398313719deg, 14.510108888868062deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9325927846875deg, 14.510159444170505deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93302662272293deg, 14.510169166665685deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.931048229744deg, 14.511458325619975deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9324659719925deg, 14.50546999948216deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93257959305737deg, 14.505923333026077deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9324544932972deg, 14.506235555015186deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9326186138913deg, 14.506502221975301deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9333026445049deg, 14.5071411108583deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93230299395805deg, 14.50725888797809deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9305137189235deg, 14.507577765126674deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9329147204452deg, 14.507659999994514deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9336676164002deg, 14.507771110044835deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93295718559244deg, 14.507822222220826deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9324866253823deg, 14.50787666619432deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9333290433548deg, 14.508131110818962deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93386272846715deg, 14.508218887156344deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9332246023234deg, 14.508547777626548deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9331190130145deg, 14.508728888833122deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93314426279403deg, 14.508859999925713deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93343578226546deg, 14.509039999516377deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9336010531612deg, 14.509074443568965deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93326018232676deg, 14.50924666647272deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93364811016716deg, 14.509308887880692deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9340830949199deg, 14.509441108432242deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9338983135595deg, 14.50965444257314deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9329250494962deg, 14.509717777774336deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9321985438844deg, 14.509867776554776deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.933132786521deg, 14.509946666601145deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9320550770438deg, 14.510375553827553deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9328619247407deg, 14.510406666645911deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93316721853074deg, 14.510426666573233deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93277240206936deg, 14.510927777703625deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9324143077943deg, 14.51275777715181deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9275677269126deg, 14.500596605128557deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.927746466834deg, 14.501008831367187deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9266458154624deg, 14.502191026751968deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9228357244253deg, 14.504067283106435deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93990768503437deg, 14.507262120008416deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9247235081534deg, 14.508455967583407deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.92681223110986deg, 14.512446031166203deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9300258558489deg, 14.514221370701051deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.92987320532956deg, 14.514293313201446deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9243195565242deg, 14.514717064278335deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9238897267355deg, 14.514715103724003deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.92431152004195deg, 14.5147753973179deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9243215622673deg, 14.514789008796463deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.92986114376197deg, 14.515028313046534deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9259042913158deg, 14.515086561362464deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9296542624806deg, 14.515045810243592deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.93038336645174deg, 14.515135263761158deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9242813731703deg, 14.515249840659397deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9262095843097deg, 14.515323792505098deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9290577124884deg, 14.515586356704798deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9244380211939deg, 14.515751513031034deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9286740654369deg, 14.51622412784018deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.92737247444126deg, 14.517857433996133deg], 0.07arcsec] coord=ICRS color=red width=2
-circle [[290.9274989670998deg, 14.519796048090123deg], 0.07arcsec] coord=ICRS color=red width=2
+circle [[290.93232480562904deg, 14.50541222136782deg], 0.07arcsec] coord=ICRS color=red width=2 label=0
+circle [[290.932371860991deg, 14.505463332600574deg], 0.07arcsec] coord=ICRS color=red width=2 label=1
+circle [[290.932455642757deg, 14.505459999460392deg], 0.07arcsec] coord=ICRS color=red width=2 label=2
+circle [[290.9324648242179deg, 14.505505555035423deg], 0.07arcsec] coord=ICRS color=red width=2 label=3
+circle [[290.9322524991548deg, 14.505941110052976deg], 0.07arcsec] coord=ICRS color=red width=2 label=4
+circle [[290.9325841838294deg, 14.505934444144511deg], 0.07arcsec] coord=ICRS color=red width=2 label=5
+circle [[290.93261287623363deg, 14.505959999743824deg], 0.07arcsec] coord=ICRS color=red width=2 label=6
+circle [[290.9312758073839deg, 14.506065549560057deg], 0.07arcsec] coord=ICRS color=red width=2 label=7
+circle [[290.93236152972986deg, 14.506206665909666deg], 0.07arcsec] coord=ICRS color=red width=2 label=8
+circle [[290.932482038112deg, 14.506221110627845deg], 0.07arcsec] coord=ICRS color=red width=2 label=9
+circle [[290.93242924391205deg, 14.506235554959966deg], 0.07arcsec] coord=ICRS color=red width=2 label=10
+circle [[290.93257729667545deg, 14.506496666356718deg], 0.07arcsec] coord=ICRS color=red width=2 label=11
+circle [[290.93260828458847deg, 14.506499999737997deg], 0.07arcsec] coord=ICRS color=red width=2 label=12
+circle [[290.93262664706225deg, 14.506992221987339deg], 0.07arcsec] coord=ICRS color=red width=2 label=13
+circle [[290.9307880264093deg, 14.506997767805686deg], 0.07arcsec] coord=ICRS color=red width=2 label=14
+circle [[290.9334059376306deg, 14.507024444018393deg], 0.07arcsec] coord=ICRS color=red width=2 label=15
+circle [[290.9337181129891deg, 14.507033332109476deg], 0.07arcsec] coord=ICRS color=red width=2 label=16
+circle [[290.93342544862844deg, 14.507043332869523deg], 0.07arcsec] coord=ICRS color=red width=2 label=17
+circle [[290.9332532933906deg, 14.507259999814085deg], 0.07arcsec] coord=ICRS color=red width=2 label=18
+circle [[290.93272305374404deg, 14.50735999988116deg], 0.07arcsec] coord=ICRS color=red width=2 label=19
+circle [[290.9327494509447deg, 14.507378888794873deg], 0.07arcsec] coord=ICRS color=red width=2 label=20
+circle [[290.93280913159deg, 14.507419999951251deg], 0.07arcsec] coord=ICRS color=red width=2 label=21
+circle [[290.93346791481406deg, 14.507545555004366deg], 0.07arcsec] coord=ICRS color=red width=2 label=22
+circle [[290.93315114793177deg, 14.507551111030871deg], 0.07arcsec] coord=ICRS color=red width=2 label=23
+circle [[290.93274371223754deg, 14.507565555456512deg], 0.07arcsec] coord=ICRS color=red width=2 label=24
+circle [[290.93288947092117deg, 14.507584444432874deg], 0.07arcsec] coord=ICRS color=red width=2 label=25
+circle [[290.9349691148034deg, 14.507588880329124deg], 0.07arcsec] coord=ICRS color=red width=2 label=26
+circle [[290.9329147204491deg, 14.507639999994485deg], 0.07arcsec] coord=ICRS color=red width=2 label=27
+circle [[290.9329445608162deg, 14.507713333331495deg], 0.07arcsec] coord=ICRS color=red width=2 label=28
+circle [[290.932954890178deg, 14.507783333331894deg], 0.07arcsec] coord=ICRS color=red width=2 label=29
+circle [[290.9329330837313deg, 14.507845555552828deg], 0.07arcsec] coord=ICRS color=red width=2 label=30
+circle [[290.9328378239677deg, 14.50789555552345deg], 0.07arcsec] coord=ICRS color=red width=2 label=31
+circle [[290.9320355716581deg, 14.508967775974341deg], 0.07arcsec] coord=ICRS color=red width=2 label=32
+circle [[290.933455293244deg, 14.50896999947614deg], 0.07arcsec] coord=ICRS color=red width=2 label=33
+circle [[290.93330150000054deg, 14.509205555305178deg], 0.07arcsec] coord=ICRS color=red width=2 label=34
+circle [[290.93388798249646deg, 14.509271109280688deg], 0.07arcsec] coord=ICRS color=red width=2 label=35
+circle [[290.9331924675019deg, 14.509583333216197deg], 0.07arcsec] coord=ICRS color=red width=2 label=36
+circle [[290.9331637746304deg, 14.509632222131787deg], 0.07arcsec] coord=ICRS color=red width=2 label=37
+circle [[290.93242464482876deg, 14.50967333272936deg], 0.07arcsec] coord=ICRS color=red width=2 label=38
+circle [[290.9330719573353deg, 14.509747777749356deg], 0.07arcsec] coord=ICRS color=red width=2 label=39
+circle [[290.93330379635927deg, 14.509801110857401deg], 0.07arcsec] coord=ICRS color=red width=2 label=40
+circle [[290.931436458849deg, 14.509894439540947deg], 0.07arcsec] coord=ICRS color=red width=2 label=41
+circle [[290.93153171929515deg, 14.509921106802128deg], 0.07arcsec] coord=ICRS color=red width=2 label=42
+circle [[290.9328217547551deg, 14.510005555514972deg], 0.07arcsec] coord=ICRS color=red width=2 label=43
+circle [[290.93118740318033deg, 14.509994437805098deg], 0.07arcsec] coord=ICRS color=red width=2 label=44
+circle [[290.93278273231635deg, 14.510002222155856deg], 0.07arcsec] coord=ICRS color=red width=2 label=45
+circle [[290.93278847089607deg, 14.51002111104895deg], 0.07arcsec] coord=ICRS color=red width=2 label=46
+circle [[290.93307540064654deg, 14.510047777747673deg], 0.07arcsec] coord=ICRS color=red width=2 label=47
+circle [[290.93259909718176deg, 14.510075555281304deg], 0.07arcsec] coord=ICRS color=red width=2 label=48
+circle [[290.93283552733214deg, 14.510094444411425deg], 0.07arcsec] coord=ICRS color=red width=2 label=49
+circle [[290.932651892197deg, 14.51012555535571deg], 0.07arcsec] coord=ICRS color=red width=2 label=50
+circle [[290.93305359401074deg, 14.5101099999797deg], 0.07arcsec] coord=ICRS color=red width=2 label=51
+circle [[290.9329204585522deg, 14.510153333329205deg], 0.07arcsec] coord=ICRS color=red width=2 label=52
+circle [[290.9330593326255deg, 14.510148888866212deg], 0.07arcsec] coord=ICRS color=red width=2 label=53
+circle [[290.9330053898101deg, 14.51017777777201deg], 0.07arcsec] coord=ICRS color=red width=2 label=54
+circle [[290.9329181630825deg, 14.510321111106615deg], 0.07arcsec] coord=ICRS color=red width=2 label=55
+circle [[290.9330340828781deg, 14.510394444431228deg], 0.07arcsec] coord=ICRS color=red width=2 label=56
+circle [[290.9324946540502deg, 14.510401110654948deg], 0.07arcsec] coord=ICRS color=red width=2 label=57
+circle [[290.931808315061deg, 14.510763330532956deg], 0.07arcsec] coord=ICRS color=red width=2 label=58
+circle [[290.93272075418093deg, 14.51122999987963deg], 0.07arcsec] coord=ICRS color=red width=2 label=59
+circle [[290.929582869161deg, 14.511511086993849deg], 0.07arcsec] coord=ICRS color=red width=2 label=60
+circle [[290.93171534174087deg, 14.51214777450724deg], 0.07arcsec] coord=ICRS color=red width=2 label=61
+circle [[290.931538589116deg, 14.512492217955888deg], 0.07arcsec] coord=ICRS color=red width=2 label=62
+circle [[290.93246710288474deg, 14.51304333282353deg], 0.07arcsec] coord=ICRS color=red width=2 label=63
+circle [[290.92995470029115deg, 14.513892203129354deg], 0.07arcsec] coord=ICRS color=red width=2 label=64
+circle [[290.93013259876085deg, 14.51397664976906deg], 0.07arcsec] coord=ICRS color=red width=2 label=65
+circle [[290.93092912952557deg, 14.51402221350996deg], 0.07arcsec] coord=ICRS color=red width=2 label=66
+circle [[290.9300820972429deg, 14.514052204715362deg], 0.07arcsec] coord=ICRS color=red width=2 label=67
+circle [[290.92995928871784deg, 14.51407886985488deg], 0.07arcsec] coord=ICRS color=red width=2 label=68
+circle [[290.9323316912753deg, 14.50563277695228deg], 0.07arcsec] coord=ICRS color=red width=2 label=69
+circle [[290.93331182623484deg, 14.507139721965851deg], 0.07arcsec] coord=ICRS color=red width=2 label=70
+circle [[290.93277756990904deg, 14.507273888827976deg], 0.07arcsec] coord=ICRS color=red width=2 label=71
+circle [[290.9326771456659deg, 14.50733805539649deg], 0.07arcsec] coord=ICRS color=red width=2 label=72
+circle [[290.9285657727739deg, 14.507666625834712deg], 0.07arcsec] coord=ICRS color=red width=2 label=73
+circle [[290.9329523079356deg, 14.507814444452949deg], 0.07arcsec] coord=ICRS color=red width=2 label=74
+circle [[290.93231360702663deg, 14.5083919435734deg], 0.07arcsec] coord=ICRS color=red width=2 label=75
+circle [[290.92857780846106deg, 14.508436626058646deg], 0.07arcsec] coord=ICRS color=red width=2 label=76
+circle [[290.93352272116846deg, 14.508835277112416deg], 0.07arcsec] coord=ICRS color=red width=2 label=77
+circle [[290.93365930048736deg, 14.509307776746626deg], 0.07arcsec] coord=ICRS color=red width=2 label=78
+circle [[290.934824232447deg, 14.509424437084deg], 0.07arcsec] coord=ICRS color=red width=2 label=79
+circle [[290.93283782297726deg, 14.509898888867031deg], 0.07arcsec] coord=ICRS color=red width=2 label=80
+circle [[290.9328398313719deg, 14.510108888868062deg], 0.07arcsec] coord=ICRS color=red width=2 label=81
+circle [[290.9325927846875deg, 14.510159444170505deg], 0.07arcsec] coord=ICRS color=red width=2 label=82
+circle [[290.93302662272293deg, 14.510169166665685deg], 0.07arcsec] coord=ICRS color=red width=2 label=83
+circle [[290.931048229744deg, 14.511458325619975deg], 0.07arcsec] coord=ICRS color=red width=2 label=84
+circle [[290.9324659719925deg, 14.50546999948216deg], 0.07arcsec] coord=ICRS color=red width=2 label=85
+circle [[290.93257959305737deg, 14.505923333026077deg], 0.07arcsec] coord=ICRS color=red width=2 label=86
+circle [[290.9324544932972deg, 14.506235555015186deg], 0.07arcsec] coord=ICRS color=red width=2 label=87
+circle [[290.9326186138913deg, 14.506502221975301deg], 0.07arcsec] coord=ICRS color=red width=2 label=88
+circle [[290.9333026445049deg, 14.5071411108583deg], 0.07arcsec] coord=ICRS color=red width=2 label=89
+circle [[290.93230299395805deg, 14.50725888797809deg], 0.07arcsec] coord=ICRS color=red width=2 label=90
+circle [[290.9305137189235deg, 14.507577765126674deg], 0.07arcsec] coord=ICRS color=red width=2 label=91
+circle [[290.9329147204452deg, 14.507659999994514deg], 0.07arcsec] coord=ICRS color=red width=2 label=92
+circle [[290.9336676164002deg, 14.507771110044835deg], 0.07arcsec] coord=ICRS color=red width=2 label=93
+circle [[290.93295718559244deg, 14.507822222220826deg], 0.07arcsec] coord=ICRS color=red width=2 label=94
+circle [[290.9324866253823deg, 14.50787666619432deg], 0.07arcsec] coord=ICRS color=red width=2 label=95
+circle [[290.9333290433548deg, 14.508131110818962deg], 0.07arcsec] coord=ICRS color=red width=2 label=96
+circle [[290.93386272846715deg, 14.508218887156344deg], 0.07arcsec] coord=ICRS color=red width=2 label=97
+circle [[290.9332246023234deg, 14.508547777626548deg], 0.07arcsec] coord=ICRS color=red width=2 label=98
+circle [[290.9331190130145deg, 14.508728888833122deg], 0.07arcsec] coord=ICRS color=red width=2 label=99
+circle [[290.93314426279403deg, 14.508859999925713deg], 0.07arcsec] coord=ICRS color=red width=2 label=100
+circle [[290.93343578226546deg, 14.509039999516377deg], 0.07arcsec] coord=ICRS color=red width=2 label=101
+circle [[290.9336010531612deg, 14.509074443568965deg], 0.07arcsec] coord=ICRS color=red width=2 label=102
+circle [[290.93326018232676deg, 14.50924666647272deg], 0.07arcsec] coord=ICRS color=red width=2 label=103
+circle [[290.93364811016716deg, 14.509308887880692deg], 0.07arcsec] coord=ICRS color=red width=2 label=104
+circle [[290.9340830949199deg, 14.509441108432242deg], 0.07arcsec] coord=ICRS color=red width=2 label=105
+circle [[290.9338983135595deg, 14.50965444257314deg], 0.07arcsec] coord=ICRS color=red width=2 label=106
+circle [[290.9329250494962deg, 14.509717777774336deg], 0.07arcsec] coord=ICRS color=red width=2 label=107
+circle [[290.9321985438844deg, 14.509867776554776deg], 0.07arcsec] coord=ICRS color=red width=2 label=108
+circle [[290.933132786521deg, 14.509946666601145deg], 0.07arcsec] coord=ICRS color=red width=2 label=109
+circle [[290.9320550770438deg, 14.510375553827553deg], 0.07arcsec] coord=ICRS color=red width=2 label=110
+circle [[290.9328619247407deg, 14.510406666645911deg], 0.07arcsec] coord=ICRS color=red width=2 label=111
+circle [[290.93316721853074deg, 14.510426666573233deg], 0.07arcsec] coord=ICRS color=red width=2 label=112
+circle [[290.93277240206936deg, 14.510927777703625deg], 0.07arcsec] coord=ICRS color=red width=2 label=113
+circle [[290.9324143077943deg, 14.51275777715181deg], 0.07arcsec] coord=ICRS color=red width=2 label=114
+circle [[290.9275677269126deg, 14.500596605128557deg], 0.07arcsec] coord=ICRS color=red width=2 label=115
+circle [[290.927746466834deg, 14.501008831367187deg], 0.07arcsec] coord=ICRS color=red width=2 label=116
+circle [[290.9266458154624deg, 14.502191026751968deg], 0.07arcsec] coord=ICRS color=red width=2 label=117
+circle [[290.9228357244253deg, 14.504067283106435deg], 0.07arcsec] coord=ICRS color=red width=2 label=118
+circle [[290.93990768503437deg, 14.507262120008416deg], 0.07arcsec] coord=ICRS color=red width=2 label=119
+circle [[290.9247235081534deg, 14.508455967583407deg], 0.07arcsec] coord=ICRS color=red width=2 label=120
+circle [[290.92681223110986deg, 14.512446031166203deg], 0.07arcsec] coord=ICRS color=red width=2 label=121
+circle [[290.9300258558489deg, 14.514221370701051deg], 0.07arcsec] coord=ICRS color=red width=2 label=122
+circle [[290.92987320532956deg, 14.514293313201446deg], 0.07arcsec] coord=ICRS color=red width=2 label=123
+circle [[290.9243195565242deg, 14.514717064278335deg], 0.07arcsec] coord=ICRS color=red width=2 label=124
+circle [[290.9238897267355deg, 14.514715103724003deg], 0.07arcsec] coord=ICRS color=red width=2 label=125
+circle [[290.92431152004195deg, 14.5147753973179deg], 0.07arcsec] coord=ICRS color=red width=2 label=126
+circle [[290.9243215622673deg, 14.514789008796463deg], 0.07arcsec] coord=ICRS color=red width=2 label=127
+circle [[290.92986114376197deg, 14.515028313046534deg], 0.07arcsec] coord=ICRS color=red width=2 label=128
+circle [[290.9259042913158deg, 14.515086561362464deg], 0.07arcsec] coord=ICRS color=red width=2 label=129
+circle [[290.9296542624806deg, 14.515045810243592deg], 0.07arcsec] coord=ICRS color=red width=2 label=130
+circle [[290.93038336645174deg, 14.515135263761158deg], 0.07arcsec] coord=ICRS color=red width=2 label=131
+circle [[290.9242813731703deg, 14.515249840659397deg], 0.07arcsec] coord=ICRS color=red width=2 label=132
+circle [[290.9262095843097deg, 14.515323792505098deg], 0.07arcsec] coord=ICRS color=red width=2 label=133
+circle [[290.9290577124884deg, 14.515586356704798deg], 0.07arcsec] coord=ICRS color=red width=2 label=134
+circle [[290.9244380211939deg, 14.515751513031034deg], 0.07arcsec] coord=ICRS color=red width=2 label=135
+circle [[290.9286740654369deg, 14.51622412784018deg], 0.07arcsec] coord=ICRS color=red width=2 label=136
+circle [[290.92737247444126deg, 14.517857433996133deg], 0.07arcsec] coord=ICRS color=red width=2 label=137
+circle [[290.9274989670998deg, 14.519796048090123deg], 0.07arcsec] coord=ICRS color=red width=2 label=138

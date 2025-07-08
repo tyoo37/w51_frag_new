@@ -29,9 +29,10 @@ def cat_to_crtf(catfile, output_file, radius=0.04 * u.arcsec, color='cyan', widt
 
     # Step 3: Create CRTF region strings
     region_strings = []
-    for coord in coords:
+    for i, coord in enumerate(coords):
         # Format: circle [[ra, dec], radius]
-        region_string = f"circle [[{coord.ra.deg}deg, {coord.dec.deg}deg], {radius.to(u.arcsec).value}arcsec] coord=ICRS color={color} width={width}"
+        region_name=str(i)
+        region_string = f"circle [[{coord.ra.deg}deg, {coord.dec.deg}deg], {radius.to(u.arcsec).value}arcsec] coord=ICRS color={color} width={width} label={region_name}"
         region_strings.append(region_string)
 
     # Step 4: Write regions to file
