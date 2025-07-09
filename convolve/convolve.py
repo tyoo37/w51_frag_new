@@ -39,7 +39,7 @@ def convolveb3b6(b3data, b6data, outdir, label):
         print('convolution', b3data)
         kernelB3 = common_beam.deconvolve(my_beamNB3).as_kernel(scaleNB3)
         conv_B3 = convolve(image_b3, kernelB3,preserve_nan=True)
-        #conv_B3 = conv_B3 * area_rat_B3
+        conv_B3 = conv_B3 * area_rat_B3
         if common_beam.major.unit=='arcsec':
             hdrNB3['BMAJ'] = common_beam.major.value/3600
             hdrNB3['BMIN'] = common_beam.minor.value/3600
@@ -55,7 +55,7 @@ def convolveb3b6(b3data, b6data, outdir, label):
         print('convolution', b6data)
         kernelB6 = common_beam.deconvolve(my_beamNB6).as_kernel(scaleNB6)
         conv_B6 = convolve(image_b6, kernelB6,preserve_nan=True)  
-        #conv_B6 = conv_B6 * area_rat_B6
+        conv_B6 = conv_B6 * area_rat_B6
         if common_beam.major.unit=='arcsec':
             hdrNB6['BMAJ'] = common_beam.major.value/3600
             hdrNB6['BMIN'] = common_beam.minor.value/3600

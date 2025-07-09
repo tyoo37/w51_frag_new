@@ -143,10 +143,16 @@ def plot_main(region, band, fitsfile, init_dendrofile, regs, label='adam', ispoi
     plot_selected_regions(ax, wcs, selected_regs, unselected_regs, selected_peaks_x, selected_peaks_y, init_dendro['peak_x'], init_dendro['peak_y'], ispointregion=ispointregion, beam=beam)
     plt.savefig(f'pngs/{region}_{band}_{label}_selected_regions.png', bbox_inches='tight', dpi=300)
 
-    return copied_dendro
+    return copied_dendro, unselected_regs
 
 def save_dendro(selected_dendro, region, band, label='adam'):
     
     
     selected_dendro.write(f'tables/{region}_{band}_{label}_selected.fits', overwrite=True)
     print(f'Saved selected dendrogram to tables/{region}_{band}_{label}_selected.fits')
+
+def save_unselected_dendro(init_dendro, region, band, label='adam'):
+    
+    
+    insignificant_dendro.write(f'tables/{region}_{band}_{label}_insignificant.reg', overwrite=True)
+    print(f'Saved insignificant dendrogram to tables/{region}_{band}_{label}_insignificant.reg')

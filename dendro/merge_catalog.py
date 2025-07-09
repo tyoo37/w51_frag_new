@@ -45,6 +45,9 @@ for region in ['W51-E', 'W51-IRS2']:
         count_added_dendro = add_count_column(init_dendro, tab1, tab2, tab3)
 
         select_ind = np.where(count_added_dendro['id_count']>=2)
+        select_ind2 = np.where(count_added_dendro['id_count']==1)
         
         truncated_dendro = count_added_dendro[select_ind]
+        ambiguous_dendro = count_added_dendro[select_ind2]
         truncated_dendro.write(f'tables/{region}_{band}_truncated_dendro.fits', overwrite=True)
+        ambiguous_dendro.write(f'tables/{region}_{band}_ambiguous_dendro.fits', overwrite=True)
