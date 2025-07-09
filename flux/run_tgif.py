@@ -39,3 +39,6 @@ def run_tgif(fitsfile, catalogfile, band='b3', regionlabel='w51e'):
 
 if __name__ == "__main__":
     run_tgif(Path.w51e_b3_tt0, Path.w51e_dendro_matched_catalog_new, band='b3', regionlabel='w51e')
+    run_tgif(Path.w51e_b6_tt0, Path.w51e_dendro_matched_catalog_new, band='b6', regionlabel='w51e')
+    run_tgif(Path.w51n_b3_tt0, Path.w51n_dendro_matched_catalog_new, band='b3', regionlabel='w51n')
+    run_tgif(Path.w51n_b6_tt0, Path.w51n_dendro_matched_catalog_new, band='b6', regionlabel='w51n')
