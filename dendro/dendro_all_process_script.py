@@ -82,6 +82,9 @@ if __name__ == "__main__":
     print("Running cat_to_reg.py to create reg files from catalogs...")
     exec(open("cat_to_reg.py").read())
 
+    print("Running remove_duplicate.ipynb to remove duplicate sources from the matched catalog...")
+    run_notebook('remove_duplicate.ipynb', kernel_name='base')
+
     #manually adjust the matched catalog
     print("Running manual_adjustment.ipynb to manually adjust the matched catalog...")
     run_notebook('manual_adjustment.ipynb', kernel_name='base')

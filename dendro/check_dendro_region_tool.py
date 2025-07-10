@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from regions import CirclePixelRegion
 import astropy.units as u
 from radio_beam import Beam
-
+import regions
 import Paths.Paths as paths
 Path = paths.filepaths()
 
@@ -151,8 +151,8 @@ def save_dendro(selected_dendro, region, band, label='adam'):
     selected_dendro.write(f'tables/{region}_{band}_{label}_selected.fits', overwrite=True)
     print(f'Saved selected dendrogram to tables/{region}_{band}_{label}_selected.fits')
 
-def save_unselected_dendro(init_dendro, region, band, label='adam'):
+def save_unselected_dendro(insignificant_dendro, region, band, label='adam'):
     
-    
-    insignificant_dendro.write(f'tables/{region}_{band}_{label}_insignificant.reg', overwrite=True)
+    insignificant_regions = regions.Regions(insignificant_dendro)    
+    insignificant_regions.write(f'tables/{region}_{band}_{label}_insignificant.reg', overwrite=True)
     print(f'Saved insignificant dendrogram to tables/{region}_{band}_{label}_insignificant.reg')

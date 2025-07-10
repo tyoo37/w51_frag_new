@@ -38,12 +38,21 @@ if __name__ == "__main__":
     print("Running TGIF script...")
     exec(open("flux/run_tgif.py").read())    
 
-    #run spectral index notebook
+    #get size distribution 
+    print("Running size distribution notebook...")
+    run_notebook('size/size_distribution.ipynb', kernel_name='base')
+
+    #run spectral index notebook / will opbtain spetral index
     print("Running spectral index notebook...")
     run_notebook('spectral_index/spectral_index.ipynb', kernel_name='base')
 
+    # will obtain temperature
+    print("Running flux flux notebook...")
     run_notebook('spectral_index/flux_flux_new.ipynb', kernel_name='base')
+
+    # will obtain flux mass histogram and use temperature and flux
+    print("Running flux mass histogram notebook...")
     run_notebook('flux/flux_mass_histogram.ipynb', kernel_name='base')
 
 
-    
+        

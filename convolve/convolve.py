@@ -40,6 +40,7 @@ def convolveb3b6(b3data, b6data, outdir, label):
         kernelB3 = common_beam.deconvolve(my_beamNB3).as_kernel(scaleNB3)
         conv_B3 = convolve(image_b3, kernelB3,preserve_nan=True)
         conv_B3 = conv_B3 * area_rat_B3
+        
         if common_beam.major.unit=='arcsec':
             hdrNB3['BMAJ'] = common_beam.major.value/3600
             hdrNB3['BMIN'] = common_beam.minor.value/3600
@@ -48,7 +49,8 @@ def convolveb3b6(b3data, b6data, outdir, label):
             hdrNB3['BMAJ'] = common_beam.major.value
             hdrNB3['BMIN'] = common_beam.minor.value
             hdrNB3['BPA'] = common_beam.pa.value
-        fits.writeto(outdir+'/%s_B3_conv.fits'%label, conv_B3, hdrNB3, overwrite = True)
+        hdul = fits.primaryHDU(data=conv_b3, header=hdrNB3)
+        hdul.writeto(outdir+'/%s_B3_conv.fits'%label, overwrite = True)
     
     area_rat_B6 = (common_beam.sr/my_beamNB6.sr).value
     if area_rat_B6 != 1:
@@ -64,7 +66,8 @@ def convolveb3b6(b3data, b6data, outdir, label):
             hdrNB3['BMAJ'] = common_beam.major.value
             hdrNB3['BMIN'] = common_beam.minor.value
             hdrNB3['BPA'] = common_beam.pa.value
-        fits.writeto(outdir+'/%s_B6_conv.fits'%label, conv_B6, hdrNB6, overwrite = True)
+        hdul = fits.PrimaryHDU(data=conv_B6, header=hdrNB6)
+        hdul.writeto(outdir+'/%s_B6_conv.fits'%label,  overwrite = True)
 
 convolveb3b6(Path.w51e_b3_tt0,Path.w51e_b6_tt0,'/orange/adamginsburg/w51/TaehwaYoo/w51e_b6_imaging_2025/','w51e')
 convolveb3b6(Path.w51n_b3_tt0,Path.w51n_b6_tt0,'/orange/adamginsburg/w51/TaehwaYoo/w51n_b6_imaging_2025/','w51n')
