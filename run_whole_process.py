@@ -32,11 +32,15 @@ def run_notebook(filename, kernel_name='python39'):
 if __name__ == "__main__":
     #run dendrogram
     print("Running dendrogram all process script...")
-    exec(open("dendro/dendro_all_process_script.py").read())
+    #exec(open("dendro/dendro_all_process_script.py").read())
+
+    # run convolve script
+    print("Running convolve script...")
+    #exec(open("convolve/convolve.py").read())
 
     #run TGIF to create fitting results
     print("Running TGIF script...")
-    exec(open("flux/run_tgif.py").read())    
+    #exec(open("flux/run_tgif.py").read())    
 
     #get size distribution 
     print("Running size distribution notebook...")
