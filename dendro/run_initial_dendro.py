@@ -92,7 +92,7 @@ def main():
             vmin = -0.00010907209521789237
             vmax = 0.0009166079520288469
         elif band == 'B6':
-            fitsfile = Path.w51e_b6_cont
+            fitsfile = Path.w51e_b6_tt0
             pbfile = None
             noiseregion = Path.w51e_b6_noise_region
             regfile_to_remove = None
@@ -108,7 +108,7 @@ def main():
             vmin =  -0.00010907209521789237
             vmax = 0.0009166079520288469
         elif band == 'B6':
-            fitsfile = Path.w51n_b6_cont
+            fitsfile = Path.w51n_b6_tt0
             pbfile = None
             noiseregion = Path.w51n_b6_noise_region
             regfile_to_remove = None

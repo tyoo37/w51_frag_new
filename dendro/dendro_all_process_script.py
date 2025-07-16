@@ -31,13 +31,13 @@ if __name__ == "__main__":
     #run shell script to run initial dendrogram
     print("Running initial dendrogram script...")
     print("Runing run_initial_dendro.sh")
-    result = subprocess.run('run_initial_dendro.sh', shell=True, check=True)
+    result = subprocess.run('bash run_initial_dendro.sh', shell=True, check=True)
     print("STDOUT:", result.stdout)
     print("STDERR:", result.stderr)
 
     for region in ['W51-E', 'W51-IRS2']:
         for band in ['B3', 'B6']:
-            file_path = f'fits/{region}_{band}_init_dendro.fits'
+            file_path = f'tables/{region}_{band}_init_dendro.fits'
             assert os.path.exists(file_path), f"Error: File '{file_path}' does not exist."
  
 
@@ -56,14 +56,14 @@ if __name__ == "__main__":
 
     for region in ['W51-E', 'W51-IRS2']:
         for band in ['B3', 'B6']:
-            file_path = f'{region}_{band}_nazar_selected_regions.png'
+            file_path = f'pngs/{region}_{band}_nazar_selected_regions.png'
             assert os.path.exists(file_path), f"Error: File '{file_path}' does not exist."
     print("Running check_taehwa_regions.ipynb")
     run_notebook('check_taehwa_regions.ipynb', kernel_name='base')
 
     for region in ['W51-E', 'W51-IRS2']:
         for band in ['B3', 'B6']:
-            file_path = f'{region}_{band}_taehwa_selected_regions.png'
+            file_path = f'pngs/{region}_{band}_taehwa_selected_regions.png'
             assert os.path.exists(file_path), f"Error: File '{file_path}' does not exist."
 
     #merge the matching sources from the three coauthors into one catalog
@@ -89,3 +89,6 @@ if __name__ == "__main__":
     print("Running manual_adjustment.ipynb to manually adjust the matched catalog...")
     run_notebook('manual_adjustment.ipynb', kernel_name='base')
 
+    
+
+    run_notebook('make_insignificant_catalog.ipynb', kernel_name='base')

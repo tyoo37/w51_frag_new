@@ -44,7 +44,7 @@ if __name__ == "__main__":
 
     #get size distribution 
     print("Running size distribution notebook...")
-    run_notebook('size/size_distribution.ipynb', kernel_name='base')
+    #run_notebook('size/size_distribution.ipynb', kernel_name='base')
 
     #run spectral index notebook / will opbtain spetral index
     print("Running spectral index notebook...")
@@ -57,6 +57,11 @@ if __name__ == "__main__":
     # will obtain flux mass histogram and use temperature and flux
     print("Running flux mass histogram notebook...")
     run_notebook('flux/flux_mass_histogram.ipynb', kernel_name='base')
+    print("Running main fragmentation notebook...")
+    # this notebook needs to be refactored in the future
+    run_notebook('fragment/multiplicity_newnewnewnew_fabien_manual.ipynb', kernel_name='base')
+    print("Running ciPPOs vs caPPOs notebook...")
+    run_notebook('fragment/isolated_vs_core_associated_copy.ipynb', kernel_name='base')
 
 
         
