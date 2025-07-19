@@ -36,7 +36,7 @@ for region in ['W51-E', 'W51-IRS2']:
                 vmin = -0.00010907209521789237
                 vmax = 0.0009166079520288469
             elif band == 'B6':
-                fitsfile = Path.w51e_b6_cont
+                fitsfile = Path.w51e_b6_tt0
               
                 vmin = -0.00031168037547342546
                 vmax = 0.002825007797582483
@@ -47,7 +47,7 @@ for region in ['W51-E', 'W51-IRS2']:
                 vmin =  -0.00010907209521789237
                 vmax = 0.0009166079520288469
             elif band == 'B6':
-                fitsfile = Path.w51n_b6_cont
+                fitsfile = Path.w51n_b6_tt0
                
                 vmin = -0.00031168037547342546
                 vmax = 0.002825007797582483

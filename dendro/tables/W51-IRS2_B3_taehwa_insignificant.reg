@@ -1,5 +1,5 @@
 # Region file format: DS9 astropy/regions
-global include=True width=2 color=147eb3 dash=1
+global color=147eb3 include=True width=2 dash=1
 icrs
 ellipse(290.92432535,14.51479158,7.80555556e-06,1.18333333e-05,0.00408696)
 ellipse(290.91820128,14.51739822,3.10555556e-05,2.99444444e-05,0.00000000)

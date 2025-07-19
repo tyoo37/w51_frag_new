@@ -46,6 +46,7 @@ for region in ['W51-E', 'W51-IRS2']:
 
         select_ind = np.where(count_added_dendro['id_count']>=2)
         select_ind2 = np.where(count_added_dendro['id_count']==1)
+        print(len(select_ind[0]), len(select_ind2[0]))
         
         truncated_dendro = count_added_dendro[select_ind]
         ambiguous_dendro = count_added_dendro[select_ind2]

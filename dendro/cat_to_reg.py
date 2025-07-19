@@ -40,8 +40,8 @@ def cat_to_crtf(catfile, output_file, radius=0.04 * u.arcsec, color='cyan', widt
         f.write("#CRTFv0\n")
         f.write("\n".join(region_strings))
 
-cat_to_crtf(Path.w51e_dendro_matched_catalog, 'tables/w51e_dendro_matched_catalog_old.crtf', color='blue', no_use_ra=True)
-cat_to_crtf(Path.w51n_dendro_matched_catalog, 'tables/w51n_dendro_matched_catalog_old.crtf', color='green', no_use_ra=True)
-cat_to_crtf('tables/dendro_w51e_matched.fits', 'tables/w51e_dendro_matched_catalog_new.crtf', color='red', radius=0.07 * u.arcsec)
-cat_to_crtf('tables/dendro_w51n_matched.fits', 'tables/w51n_dendro_matched_catalog_new.crtf', color='orange', radius=0.07 * u.arcsec)
-cat_to_crtf('tables/dendro_w51e_matched_duplicated_removed.fits', 'tables/w51e_dendro_matched_catalog_new_duplicated_removed.crtf', color='magenta', radius=0.1 * u.arcsec)
+cat_to_crtf(Path.w51e_dendro_matched_catalog_old, 'tables/w51e_dendro_matched_catalog_old.crtf', color='blue', no_use_ra=True)
+cat_to_crtf(Path.w51n_dendro_matched_catalog_old, 'tables/w51n_dendro_matched_catalog_old.crtf', color='green', no_use_ra=True)
+cat_to_crtf(Path.w51e_dendro_matched_catalog_new, 'tables/w51e_dendro_matched_catalog_new.crtf', color='red', radius=0.07 * u.arcsec)
+cat_to_crtf(Path.w51n_dendro_matched_catalog_new, 'tables/w51n_dendro_matched_catalog_new.crtf', color='orange', radius=0.07 * u.arcsec)
+#cat_to_crtf('tables/dendro_w51e_matched_duplicated_removed.fits', 'tables/w51e_dendro_matched_catalog_new_duplicated_removed.crtf', color='magenta', radius=0.1 * u.arcsec)

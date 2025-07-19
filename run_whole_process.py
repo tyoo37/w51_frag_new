@@ -31,6 +31,7 @@ def run_notebook(filename, kernel_name='python39'):
 
 if __name__ == "__main__":
     #run dendrogram
+    os.chdir('/home/t.yoo/w51/w51_frag_new/dendro')
     print("Running dendrogram all process script...")
     #exec(open("dendro/dendro_all_process_script.py").read())
 
@@ -39,29 +40,35 @@ if __name__ == "__main__":
     #exec(open("convolve/convolve.py").read())
 
     #run TGIF to create fitting results
-    print("Running TGIF script...")
-    #exec(open("flux/run_tgif.py").read())    
+    os.chdir('/home/t.yoo/w51/w51_frag_new/flux')
 
+    print("Running TGIF script...")
+    #exec(open("run_tgif.py").read())    
+    
+    os.chdir('/home/t.yoo/w51/w51_frag_new/size')
     #get size distribution 
     print("Running size distribution notebook...")
-    #run_notebook('size/size_distribution.ipynb', kernel_name='base')
+    #run_notebook('size_distribution.ipynb', kernel_name='base')
 
     #run spectral index notebook / will opbtain spetral index
+    os.chdir('/home/t.yoo/w51/w51_frag_new/spectral_index')
     print("Running spectral index notebook...")
-    run_notebook('spectral_index/spectral_index.ipynb', kernel_name='base')
+    #run_notebook('spectral_index.ipynb', kernel_name='base')
 
     # will obtain temperature
     print("Running flux flux notebook...")
-    run_notebook('spectral_index/flux_flux_new.ipynb', kernel_name='base')
+    #run_notebook('flux_flux_new.ipynb', kernel_name='base')
 
     # will obtain flux mass histogram and use temperature and flux
+    os.chdir('/home/t.yoo/w51/w51_frag_new/flux')
     print("Running flux mass histogram notebook...")
-    run_notebook('flux/flux_mass_histogram.ipynb', kernel_name='base')
+    #run_notebook('flux_mass_histogram.ipynb', kernel_name='base')
     print("Running main fragmentation notebook...")
     # this notebook needs to be refactored in the future
-    run_notebook('fragment/multiplicity_newnewnewnew_fabien_manual.ipynb', kernel_name='base')
+    os.chdir('/home/t.yoo/w51/w51_frag_new/fragment')
+    run_notebook('multiplicity_newnewnewnew_fabien_manual.ipynb', kernel_name='base')
     print("Running ciPPOs vs caPPOs notebook...")
-    run_notebook('fragment/isolated_vs_core_associated_copy.ipynb', kernel_name='base')
+    run_notebook('isolated_vs_core_associated_copy.ipynb', kernel_name='base')
 
 
         

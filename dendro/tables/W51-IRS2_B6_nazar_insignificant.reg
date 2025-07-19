@@ -1,0 +1,13 @@
+# Region file format: DS9 astropy/regions
+global highlite=1 width=2 select=1 move=1 fixed=0 delete=1 color=#2D72D2 include=1 font="helvetica 10 normal roman" source=1 edit=1
+icrs
+point(290.91822356,14.51709274)
+point(290.91845077,14.51713491)
+point(290.91820885,14.51739841)
+point(290.91801860,14.51770927)
+point(290.91722039,14.51729862)
+point(290.91731270,14.51762096)
+point(290.91553271,14.51651602)
+point(290.91711629,14.51920086)
+point(290.91731209,14.51918762)
+point(290.91786264,14.51939986)
