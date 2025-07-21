@@ -8,46 +8,45 @@ import networkx as nx
 from regions import CircleSkyRegion
 from regions import PixCoord
 from astropy.coordinates import search_around_sky
+from astropy.io import fits
+from astropy.wcs import WCS
+from astropy.table import Table
 import Paths.Paths as paths
 Path = paths.filepaths()
 
-def check_overlap(image_dir1, image_dir2, cat1, cat2):
-    cats = [cat1, cat2]
-    catnum1 = len(cat1['peak_x_sky'])
-    catnum2 = len(cat2['peak_y_sky'])
-    isinside1 = np.zeros(catnum1, dtype=bool)
-    isinside2 = np.zeros(catnum2, dtype=bool)
-    isinsides = [isinside1, isinside2]
-    image_dirs = [image_dir1, image_dir2]
-    catnums = [catnum1, catnum2]
-    for i, image_dir in enumerate(image_dirs):
-        fitsdata = fits.open(image_dir)
-        wcs = WCS(fitsdata[0].header,naxis=2)
+def check_overlap( b3onlycat,b6image_dir):
+    
+    catnum = len(b3onlycat['ra'])
+   
+    isinside = np.zeros(catnum, dtype=bool)
+ 
+   
+    fitsdata = fits.open(b6image_dir)
+    wcs = WCS(fitsdata[0].header,naxis=2)
+    image = fitsdata[0].data[0][0]
+    if len(image.shape)>2:
         image = fitsdata[0].data[0][0]
-        if len(image.shape)>2:
-            image = fitsdata[0].data[0][0]
 
-        cat_comp = cats[i] ; cat = cats[i-1]
 
-        xpeak = cat['peak_x_sky']
-        ypeak = cat['peak_y_sky']
+    xpeak = b3onlycat['ra']
+    ypeak = b3onlycat['dec']
 
-        xypeak = np.vstack((xpeak,ypeak)).T
+    xypeak = np.vstack((xpeak,ypeak)).T
 
-        xypix = wcs.wcs_world2pix(xypeak,0)
+    xypix = wcs.wcs_world2pix(xypeak,0)
+    
+    for j in range(catnum):
+        if xypix[j,0] < 0 or xypix[j,1] < 0 or xypix[j,0]>=image.shape[0] or xypix[j,1] >= image.shape[1]:
+            isinside[j] = False
         
-        for j in range(catnums[i-1]):
-            if xypix[j,0] < 0 or xypix[j,1] < 0 or xypix[j,0]>=image.shape[0] or xypix[j,1] >= image.shape[1]:
-                isinsides[i-1][j] = False
-            
-            else:
-                isinsides[i-1][j] = np.isfinite(image[int(xypix[j,0]),int(xypix[j,1])])
+        else:
+            isinside[j] = np.isfinite(image[int(xypix[j,0]),int(xypix[j,1])])
                 
-    return isinsides
+    return isinside
 
 
 
-def get_insignificant_regions(region_a_file, region_b_file, region_c_file, tolerance=1.1e-5*u.deg):
+def get_insignificant_regions(region_a_file, region_b_file, region_c_file, tolerance=1e-5*u.deg):
     regions_A = Regions.read(region_a_file)
     regions_B = Regions.read(region_b_file)
     regions_C = Regions.read(region_c_file)
@@ -61,6 +60,7 @@ def get_insignificant_regions(region_a_file, region_b_file, region_c_file, toler
 
     # === Build overlap graph ===
     G = nx.Graph()
+
 
     def tag(i, j):
         return f"{i}_{j}"
@@ -105,7 +105,7 @@ def get_insignificant_regions(region_a_file, region_b_file, region_c_file, toler
     return combined_regions
 
 
-def make_insignificant_catalogs(regions_b3, regions_b6, threshold=1.1e-5):
+def make_insignificant_catalogs(regions_b3, regions_b6, b6fits, threshold=1e-5):
     """
     Match regions between B3 and B6 based on a threshold distance.
     
@@ -155,10 +155,19 @@ def make_insignificant_catalogs(regions_b3, regions_b6, threshold=1.1e-5):
     matched_ysky = np.array(matched_ysky)
     b6only_xsky = np.array(b6only_xsky)
     b6only_ysky = np.array(b6only_ysky)
+    
+    
+
 
     matched_tab = Table([matched_xsky, matched_ysky, np.ones(len(matched_xsky), dtype=bool), np.ones(len(matched_xsky), dtype=bool)], names=('ra', 'dec', 'isdetected_b6', 'isdetected_b3'))
     b3only_tab = Table([b3only_xsky, b3only_ysky, np.zeros(len(b3only_xsky), dtype=bool), np.ones(len(b3only_xsky), dtype=bool)], names=('ra', 'dec', 'isdetected_b6', 'isdetected_b3'))
     b6only_tab = Table([b6only_xsky, b6only_ysky, np.ones(len(b6only_xsky), dtype=bool), np.zeros(len(b6only_xsky), dtype=bool)], names=('ra', 'dec', 'isdetected_b6', 'isdetected_b3'))
+
+    isinsides_b3only = check_overlap(b3only_tab, b6fits)
+
+    matched_tab.add_column(np.ones(len(matched_tab), dtype=bool), name='is_overlap')
+    b6only_tab.add_column(np.zeros(len(b6only_tab), dtype=bool), name='is_overlap')
+    b3only_tab.add_column(isinsides_b3only, name='is_overlap')
 
     matched_regions = vstack([matched_tab, b3only_tab, b6only_tab])
 
@@ -206,6 +215,11 @@ def save_regions_to_ds9_manual(region_list, filename):
 
 if __name__ == "__main__":
     for reg in ['W51-E', 'W51-IRS2']:
+
+        if reg == 'W51-E':
+            b6fits = Path.w51e_b6_tt0
+        elif reg == 'W51-IRS2':
+            b6fits = Path.w51n_b6_tt0
         
         for band in ['B3', 'B6']:
             adam_file = f'tables/{reg}_{band}_adam_insignificant.reg'
@@ -218,6 +232,6 @@ if __name__ == "__main__":
 
         b3_insignificant = Regions.read(f'tables/{reg}_B3_insignificant.reg', format='ds9')
         b6_insignificant = Regions.read(f'tables/{reg}_B6_insignificant.reg', format='ds9')
-        matched_insign = make_insignificant_catalogs(b3_insignificant, b6_insignificant)
+        matched_insign = make_insignificant_catalogs(b3_insignificant, b6_insignificant, b6fits)
         matched_insign.write(f'tables/{reg}_insignificant_catalog.fits', overwrite=True)
 
